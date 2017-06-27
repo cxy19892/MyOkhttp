@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:leaf="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activity.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:id="@+id/main_context_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_orange_light"
+        android:text="Hello World!" />
+    <ImageView
+        android:id="@+id/main_context_iv1"
+        android:layout_below="@+id/main_context_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"/>
+    <ImageView
+        android:id="@+id/main_context_iv2"
+        android:layout_below="@+id/main_context_iv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"/>
+
+
+    <com.cxy.myokhttp.mviews.mXfermode
+        android:id="@+id/xfermode1"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        leaf:radius="0"
+        leaf:tsxtStr="添加谁的照片"
+        leaf:textColor="#ff00ff"
+        leaf:textSize="16sp"
+        android:visibility="gone"
+        android:layout_below="@+id/main_context_iv1"/>
+    <com.cxy.myokhttp.mviews.Toothgrowth
+        android:id="@+id/toothgrowth"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/xfermode1"
+        leaf:toothSize = "12sp"
+        leaf:middleSize = "14sp"/>
+</RelativeLayout>

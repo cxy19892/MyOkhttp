@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">My Okhttp</string>
+    <string name="action_menu_1">action_menu_1</string>
+    <string name="action_menu_2">action_menu_2</string>
+    <string name="action_menu_3">action_menu_3</string>
+    <string name="action_menu_4">action_menu_4</string>
+    <string name="action_menu_5">action_menu_5</string>
+    <string name="action_menu_6">action_menu_6</string>
+    <string name="action_menu_7">action_menu_7</string>
+    <string name="action_menu_8">action_menu_8</string>
+    <string name="action_menu_9">action_menu_9</string>
+</resources>
